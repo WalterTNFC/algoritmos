@@ -6,5 +6,16 @@
 
 </div>
 <div align="justify">
-<i><b>Olá, esse é meu respositório de estudos de algorítimos. Com o objetivo de melhorar a lógica de programação, estou motivado a fazer pelo menos uma questão do <a href="https://app.codesignal.com/">CodeSignal</a> por dia e vou começar a commitar e comentar sobre cada uma delas, caso alguém esteja no mesmo processo e queira um ponto de vista diferente sobre a resolução. Espero que esse repo agregue valor :)) Qualuqer sugestão sobre implemntaçaõ diferente da minha ou comentários, pode entrar em contato</i>
+<h1>Solução para o desafio isPalindrome</h1>
+    <p>Fiz três possibilidades de resolução para o desafio isPalindrome, que consiste em verificar se uma palavra é um palíndromo ou não.</p>
+    <p>A primeira possibilidade é uma abordagem iterativa, onde se compara elemento por elemento da string, começando pela primeira posição e última, e então até que o tamanho da palavra toda seja percorrido, aumentando a primeira posição de forma crescente e a última de maneira decrescente. Dessa forma, é possível verificar se a palavra é ou não um palíndromo.</p>
+    <p>A segunda possibilidade é mais otimizada, pois apenas percorre metade do caminho da string, sem precisar de um contador. Isso é possível devido à propriedade de que, se uma palavra é um palíndromo, então seu primeiro e último caractere, bem como o segundo e penúltimo caractere, e assim por diante, são iguais.</p>
+    <p>A terceira e última possibilidade é a mais simples e faz uso das funções `split()`, `join()` e `reverse()` do JavaScript. A função `split()` separa a string em um array de caracteres, o `join()` junta o array de caracteres em uma string, e o `reverse()` inverte a ordem dos caracteres no array. Ao fazer isso, é possível comparar a string original com sua versão invertida para determinar se a palavra é ou não um palíndromo.</p>
+</div>
+
+-----
+</div>
+### isPalindrome
+<div align="justify">
+<i>Palin</i>
 </div>
