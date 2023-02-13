@@ -14,8 +14,3 @@
 </div>
 
 -----
-</div>
-### isPalindrome
-<div align="justify">
-<i>Palin</i>
-</div>
