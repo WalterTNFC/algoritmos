@@ -15,4 +15,22 @@ function isPalindrome(inputString) {
   return true;
 }
 
+// Maybe redux complexibility
+function isPalindrome2(string) {
+  inputString = inputString.toLowerCase();
+  firstIndex = 0;
+  lastIndex = inputString.length - 1;
+
+  // In this case we must need verify half array
+  // And dont need count
+  while (firstIndex < lastIndex) {
+    if (inputString[firstIndex] !== inputString[lastIndex]) {
+      return false;
+    }
+    firstIndex = firstIndex + 1;
+    lastIndex = lastIndex + 1;
+  }; 
+
+  return true;
+}
 console.log(isPalindrome("aabaa"));
