@@ -28,9 +28,21 @@ function isPalindrome2(string) {
       return false;
     }
     firstIndex = firstIndex + 1;
-    lastIndex = lastIndex + 1;
+    lastIndex = lastIndex - 1;
   }; 
 
   return true;
 }
+
+// Using Join
+function solution(inputString) {
+  inputString = inputString.toLowerCase();
+  const reverse = inputString.split("").reverse().join("");
+  if (inputString === reverse) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 console.log(isPalindrome("aabaa"));
